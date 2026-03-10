@@ -1,0 +1,24 @@
+name: Enviar Recordatorio Whatsapp
+
+on:
+  schedule:
+    - cron: '28 02 09 * *'
+  workflow_dispatch: # Esto activa el botón para que puedas probarlo YA mismo
+
+jobs:
+  envio_mensaje:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar codigo del repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python en el servidor
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalar librerias necesarias
+        run: pip install -r requirements.txt
+
+      - name: Ejecutar el script de envio
+        run: python script.py
