@@ -2,7 +2,7 @@ name: Enviar Recordatorio Whatsapp
 
 on:
   schedule:
-    - cron: '28 02 09 * *'
+    - cron: '00 08 02 * *'
   workflow_dispatch: # Esto activa el botón para que puedas probarlo YA mismo
 
 jobs:
