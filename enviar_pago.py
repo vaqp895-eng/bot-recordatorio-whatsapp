@@ -14,7 +14,14 @@ url = f"https://api.green-api.com/waInstance{ID_INSTANCE}/sendMessage/{API_TOKEN
 
 payload = {
     "chatId": GROUP_ID,
-    "message": "📢 *Teste de função*"
+    "message": """¡Buenos días! 
+    Pasamos por aquí para recordarles que hoy es día 9, fecha programada para el pago del mantenimiento mensual. ✨ 
+    ¿Cómo cumplir con el pago? 
+      1️⃣ Realiza tu depósito por yape o plin.
+      2️⃣ Envía la foto de tu comprobante por aquí
+      ⚠️ Nota importante: Recuerden que realizarlo hoy nos ayuda a todos a evitar el recargo por mora. ¡Agradecemos mucho su puntualidad!
+      
+      ¡Que tengan un excelente día!"""
 }
 
 headers = {
